@@ -16,6 +16,13 @@ I have build the latest source code with these modifications. They can be downlo
 
 You might get a warning about the code being unsigned when it launches, if you close the dialog, it should start and work as expected.
 
+## Kenku Settings
+
+Ensure that in the kenku.fm settings you enable "kenku remote", if you need use a non standard port (3333) or wish to control kenku.fm running on a different machine, you will need to edit `./assets/js/custom.js` to match this.
+```
+const kenkuFM = new KenkuAPI('localhost', 3333)
+```
+
 # How to use
 
 Four custom HTML tags are provided to generate Kenku.FM controls.
